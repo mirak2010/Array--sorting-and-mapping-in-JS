@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>AD</title>
+    <h1>AD</h1>
+</head>
+<body>
+    
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="descending()">Descending</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var points= [4, 12, 6, 9, 13];
+        document.getElementById("demo").innerHTML=points;
+       function ascending() {
+
+            points.sort(function (a, b) { return a - b });
+
+            document.getElementById("demo").innerHTML = points;
+
+        }
+        function descending(){
+            points.sort(function (a, b) {return b - a});
+            document.getElementById("demo").innerHTML=points;
+        }
+        
+    </script>
+</body>
+</html>

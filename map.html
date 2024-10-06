@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Map an array</title>
+    <h1>Map an array</h1>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var numbers= [20, 30, 40, 50, 95];
+        function myfunction(num){
+            return num *10;
+        }
+        var newarray= numbers.map(myfunction);
+        document.getElementById("demo").innerHTML=newarray;
+    </script>
+</body>
+</html>

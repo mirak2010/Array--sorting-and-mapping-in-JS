@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array sorting and mapping Homework</title>
+</head>
+<body>
+   
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="descending()">Descending</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var points=[8,9,6,13,45,1,64];
+        document.getElementById("demo").innerHTML=points;
+        function ascending(){
+            points.sort(function (a, b) {return a - b});
+            document.getElementById("demo").innerHTML=points;
+        }
+        function descending(){
+            points.sort(function (a, b) {return b - a});
+            document.getElementById("demo").innerHTML=points;
+        }
+        var numbers=[8,9,10,11,12,13];
+        function myfunction(num){
+            return num*20;
+
+        }
+        var newarray= numbers.map(myfunction);
+        document.getElementById("demo1").innerHTML=newarray;
+    </script>
+</body>
+</html>
